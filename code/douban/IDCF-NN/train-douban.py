@@ -180,7 +180,7 @@ for epoch in range(n_epochs):
 	if EXTRA:
 		if os.path.isdir('./train-douban/'):
 			save_model(model, './train-douban/')
-		else
+		else:
 			os.mkdir('./train-douban/'):
 			save_model(model, './train-douban/')
 	else:
