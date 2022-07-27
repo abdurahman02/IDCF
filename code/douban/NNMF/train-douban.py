@@ -118,4 +118,11 @@ for epoch in range(n_epochs):
 
 	if RMSE < bestRMSE:
 		bestRMSE = RMSE
+		path_0='./train-douban/'
+		print("Does path exist: " + str(os.path.isdir(path_0)))
+		if os.path.isdir(path_0):
+			save_model(model, path_0)
+		else:
+			os.mkdir(path_0)
+			save_model(model, path_0)
 		save_model(model, path='./train-douban/')
