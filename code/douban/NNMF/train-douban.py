@@ -125,4 +125,3 @@ for epoch in range(n_epochs):
 		else:
 			os.mkdir(path_0)
 			save_model(model, path_0)
-		save_model(model, path='./train-douban/')
